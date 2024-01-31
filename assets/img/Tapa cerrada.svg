@@ -1,0 +1,213 @@
+<svg id="Tapa_cerrada" data-name="Tapa cerrada" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="607.546" height="667" viewBox="0 0 607.546 667">
+  <defs>
+    <style>
+      .cls-1, .cls-3, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-10, .cls-11, .cls-12, .cls-13, .cls-14, .cls-15, .cls-16, .cls-17, .cls-18, .cls-19, .cls-20, .cls-21, .cls-22, .cls-23, .cls-24, .cls-25, .cls-26, .cls-27, .cls-28, .cls-29, .cls-30, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
+        stroke: #000;
+        stroke-width: 1px;
+      }
+
+      .cls-1 {
+        filter: url(#filter);
+      }
+
+      .cls-2, .cls-3 {
+        font-size: 60px;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        text-anchor: middle;
+      }
+
+      .cls-3, .cls-4 {
+        font-family: Raleway;
+        text-transform: uppercase;
+      }
+
+      .cls-4 {
+        font-size: 30px;
+      }
+
+      .cls-5 {
+        fill: url(#radial-gradient);
+      }
+
+      .cls-6 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-7 {
+        fill: url(#radial-gradient-2);
+      }
+
+      .cls-8 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-9 {
+        fill: url(#radial-gradient-3);
+      }
+
+      .cls-10 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-11 {
+        fill: url(#radial-gradient-4);
+      }
+
+      .cls-12 {
+        fill: url(#linear-gradient-4);
+      }
+
+      .cls-13 {
+        fill: url(#radial-gradient-5);
+      }
+
+      .cls-14 {
+        fill: url(#linear-gradient-5);
+      }
+
+      .cls-15 {
+        fill: url(#radial-gradient-6);
+      }
+
+      .cls-16 {
+        fill: url(#linear-gradient-6);
+      }
+
+      .cls-17 {
+        fill: url(#radial-gradient-7);
+      }
+
+      .cls-18 {
+        fill: url(#linear-gradient-7);
+      }
+
+      .cls-19 {
+        fill: url(#radial-gradient-8);
+      }
+
+      .cls-20 {
+        fill: url(#linear-gradient-8);
+      }
+
+      .cls-21 {
+        fill: url(#radial-gradient-9);
+      }
+
+      .cls-22 {
+        fill: url(#linear-gradient-9);
+      }
+
+      .cls-23 {
+        fill: url(#radial-gradient-10);
+      }
+
+      .cls-24 {
+        fill: url(#linear-gradient-10);
+      }
+
+      .cls-25 {
+        fill: url(#radial-gradient-11);
+      }
+
+      .cls-26 {
+        fill: url(#linear-gradient-11);
+      }
+
+      .cls-27 {
+        fill: url(#radial-gradient-12);
+      }
+
+      .cls-28 {
+        fill: url(#linear-gradient-12);
+      }
+
+      .cls-29 {
+        fill: url(#radial-gradient-13);
+      }
+
+      .cls-30 {
+        fill: url(#linear-gradient-13);
+      }
+    </style>
+    <filter id="filter" x="128.046" y="0.5" width="479" height="666" filterUnits="userSpaceOnUse">
+      <feImage preserveAspectRatio="none" x="128.0462" y="0.5" width="479" height="666" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNDc5IiBoZWlnaHQ9IjY2NiIgdmlld0JveD0iMCAwIDQ3OSA2NjYiPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuY2xzLTEgewogICAgICAgIGZpbGw6IHVybCgjbGluZWFyLWdyYWRpZW50KTsKICAgICAgfQogICAgPC9zdHlsZT4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyLWdyYWRpZW50IiB4MT0iMjUxLjEyOSIgeTE9IjY2NiIgeDI9IjIyNy44NzEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwLjIxNSIgc3RvcC1jb2xvcj0iIzFmMjgzNyIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjAuNzg1IiBzdG9wLWNvbG9yPSIjMmE0MjRmIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCBjbGFzcz0iY2xzLTEiIHdpZHRoPSI0NzkiIGhlaWdodD0iNjY2Ii8+Cjwvc3ZnPgo="/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <radialGradient id="radial-gradient" cx="154.046" cy="291.5" r="8" gradientUnits="userSpaceOnUse">
+      <stop offset="0"/>
+      <stop offset="1" stop-color="#151515"/>
+    </radialGradient>
+    <linearGradient id="linear-gradient" x1="99.046" y1="291.995" x2="156.046" y2="290.005" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#9197a3"/>
+      <stop offset="0.206" stop-color="#9197a3"/>
+      <stop offset="0.475" stop-color="#eef2fb"/>
+      <stop offset="0.78" stop-color="#a4a9b2"/>
+      <stop offset="1" stop-color="#a4a9b2"/>
+    </linearGradient>
+    <radialGradient id="radial-gradient-2" cx="154.046" cy="249.5" xlink:href="#radial-gradient"/>
+    <linearGradient id="linear-gradient-2" x1="99.046" y1="249.995" x2="156.046" y2="248.005" xlink:href="#linear-gradient"/>
+    <radialGradient id="radial-gradient-3" cx="154.046" cy="203.5" xlink:href="#radial-gradient"/>
+    <linearGradient id="linear-gradient-3" x1="99.046" y1="203.995" x2="156.046" y2="202.005" xlink:href="#linear-gradient"/>
+    <radialGradient id="radial-gradient-4" cx="154.046" cy="512.5" xlink:href="#radial-gradient"/>
+    <linearGradient id="linear-gradient-4" x1="99.046" y1="512.995" x2="156.046" y2="511.005" xlink:href="#linear-gradient"/>
+    <radialGradient id="radial-gradient-5" cx="154.046" cy="470.5" xlink:href="#radial-gradient"/>
+    <linearGradient id="linear-gradient-5" x1="99.046" y1="470.995" x2="156.046" y2="469.005" xlink:href="#linear-gradient"/>
+    <radialGradient id="radial-gradient-6" cx="154.046" cy="424.5" xlink:href="#radial-gradient"/>
+    <linearGradient id="linear-gradient-6" x1="99.046" y1="424.995" x2="156.046" y2="423.005" xlink:href="#linear-gradient"/>
+    <radialGradient id="radial-gradient-7" cx="154.046" cy="600.5" xlink:href="#radial-gradient"/>
+    <linearGradient id="linear-gradient-7" x1="99.046" y1="600.995" x2="156.046" y2="599.005" xlink:href="#linear-gradient"/>
+    <radialGradient id="radial-gradient-8" cx="154.046" cy="558.5" xlink:href="#radial-gradient"/>
+    <linearGradient id="linear-gradient-8" x1="99.046" y1="558.995" x2="156.046" y2="557.005" xlink:href="#linear-gradient"/>
+    <radialGradient id="radial-gradient-9" cx="154.046" cy="161.5" xlink:href="#radial-gradient"/>
+    <linearGradient id="linear-gradient-9" x1="99.046" y1="161.995" x2="156.046" y2="160.005" xlink:href="#linear-gradient"/>
+    <radialGradient id="radial-gradient-10" cx="154.046" cy="119.5" xlink:href="#radial-gradient"/>
+    <linearGradient id="linear-gradient-10" x1="99.046" y1="119.995" x2="156.046" y2="118.005" xlink:href="#linear-gradient"/>
+    <radialGradient id="radial-gradient-11" cx="154.046" cy="77.5" xlink:href="#radial-gradient"/>
+    <linearGradient id="linear-gradient-11" x1="99.046" y1="77.995" x2="156.046" y2="76.005" xlink:href="#linear-gradient"/>
+    <radialGradient id="radial-gradient-12" cx="154.046" cy="337.5" xlink:href="#radial-gradient"/>
+    <linearGradient id="linear-gradient-12" x1="99.046" y1="337.995" x2="156.046" y2="336.005" xlink:href="#linear-gradient"/>
+    <radialGradient id="radial-gradient-13" cx="154.046" cy="378.5" xlink:href="#radial-gradient"/>
+    <linearGradient id="linear-gradient-13" x1="99.046" y1="378.995" x2="156.046" y2="377.005" xlink:href="#linear-gradient"/>
+    <path id="text-path"/>
+  </defs>
+  <g style="fill: #fff; filter: url(#filter)">
+    <rect id="Rectángulo_1" data-name="Rectángulo 1" class="cls-1" x="128.046" y="0.5" width="479" height="666" rx="32" ry="32" style="stroke: inherit; filter: none; fill: inherit"/>
+  </g>
+  <use xlink:href="#Rectángulo_1" style="stroke: #000; filter: none; fill: none"/>
+  <text class="cls-2"><textPath startOffset="50%" xlink:href="#text-path"><tspan class="cls-3" dy="144">INFORMATICA</tspan><tspan class="cls-4" x="-38.954" dy="216">Leandro di pardo</tspan></textPath></text>
+  <g id="Ganchos">
+    <circle id="Elipse_1" data-name="Elipse 1" class="cls-5" cx="154.046" cy="291.5" r="8"/>
+    <path id="Rectángulo_2" data-name="Rectángulo 2" class="cls-6" d="M103.046,287.5h49a4,4,0,0,1,4,4v1a2,2,0,0,1-2,2h-53a2,2,0,0,1-2-2v-1A4,4,0,0,1,103.046,287.5Z"/>
+    <circle id="Elipse_1_copia" data-name="Elipse 1 copia" class="cls-7" cx="154.046" cy="249.5" r="8"/>
+    <path id="Rectángulo_2_copia" data-name="Rectángulo 2 copia" class="cls-8" d="M103.046,245.5h49a4,4,0,0,1,4,4v1a2,2,0,0,1-2,2h-53a2,2,0,0,1-2-2v-1A4,4,0,0,1,103.046,245.5Z"/>
+    <circle id="Elipse_1_copia_2" data-name="Elipse 1 copia 2" class="cls-9" cx="154.046" cy="203.5" r="8"/>
+    <path id="Rectángulo_2_copia_2" data-name="Rectángulo 2 copia 2" class="cls-10" d="M103.046,199.5h49a4,4,0,0,1,4,4v1a2,2,0,0,1-2,2h-53a2,2,0,0,1-2-2v-1A4,4,0,0,1,103.046,199.5Z"/>
+    <circle id="Elipse_1_copia_8" data-name="Elipse 1 copia 8" class="cls-11" cx="154.046" cy="512.5" r="8"/>
+    <path id="Rectángulo_2_copia_8" data-name="Rectángulo 2 copia 8" class="cls-12" d="M103.046,508.5h49a4,4,0,0,1,4,4v1a2,2,0,0,1-2,2h-53a2,2,0,0,1-2-2v-1A4,4,0,0,1,103.046,508.5Z"/>
+    <circle id="Elipse_1_copia_8-2" data-name="Elipse 1 copia 8" class="cls-13" cx="154.046" cy="470.5" r="8"/>
+    <path id="Rectángulo_2_copia_8-2" data-name="Rectángulo 2 copia 8" class="cls-14" d="M103.046,466.5h49a4,4,0,0,1,4,4v1a2,2,0,0,1-2,2h-53a2,2,0,0,1-2-2v-1A4,4,0,0,1,103.046,466.5Z"/>
+    <circle id="Elipse_1_copia_8-3" data-name="Elipse 1 copia 8" class="cls-15" cx="154.046" cy="424.5" r="8"/>
+    <path id="Rectángulo_2_copia_8-3" data-name="Rectángulo 2 copia 8" class="cls-16" d="M103.046,420.5h49a4,4,0,0,1,4,4v1a2,2,0,0,1-2,2h-53a2,2,0,0,1-2-2v-1A4,4,0,0,1,103.046,420.5Z"/>
+    <circle id="Elipse_1_copia_9" data-name="Elipse 1 copia 9" class="cls-17" cx="154.046" cy="600.5" r="8"/>
+    <path id="Rectángulo_2_copia_9" data-name="Rectángulo 2 copia 9" class="cls-18" d="M103.046,596.5h49a4,4,0,0,1,4,4v1a2,2,0,0,1-2,2h-53a2,2,0,0,1-2-2v-1A4,4,0,0,1,103.046,596.5Z"/>
+    <circle id="Elipse_1_copia_9-2" data-name="Elipse 1 copia 9" class="cls-19" cx="154.046" cy="558.5" r="8"/>
+    <path id="Rectángulo_2_copia_9-2" data-name="Rectángulo 2 copia 9" class="cls-20" d="M103.046,554.5h49a4,4,0,0,1,4,4v1a2,2,0,0,1-2,2h-53a2,2,0,0,1-2-2v-1A4,4,0,0,1,103.046,554.5Z"/>
+    <circle id="Elipse_1_copia_3" data-name="Elipse 1 copia 3" class="cls-21" cx="154.046" cy="161.5" r="8"/>
+    <path id="Rectángulo_2_copia_3" data-name="Rectángulo 2 copia 3" class="cls-22" d="M103.046,157.5h49a4,4,0,0,1,4,4v1a2,2,0,0,1-2,2h-53a2,2,0,0,1-2-2v-1A4,4,0,0,1,103.046,157.5Z"/>
+    <circle id="Elipse_1_copia_4" data-name="Elipse 1 copia 4" class="cls-23" cx="154.046" cy="119.5" r="8"/>
+    <path id="Rectángulo_2_copia_4" data-name="Rectángulo 2 copia 4" class="cls-24" d="M103.046,115.5h49a4,4,0,0,1,4,4v1a2,2,0,0,1-2,2h-53a2,2,0,0,1-2-2v-1A4,4,0,0,1,103.046,115.5Z"/>
+    <circle id="Elipse_1_copia_5" data-name="Elipse 1 copia 5" class="cls-25" cx="154.046" cy="77.5" r="8"/>
+    <path id="Rectángulo_2_copia_5" data-name="Rectángulo 2 copia 5" class="cls-26" d="M103.046,73.5h49a4,4,0,0,1,4,4v1a2,2,0,0,1-2,2h-53a2,2,0,0,1-2-2v-1A4,4,0,0,1,103.046,73.5Z"/>
+    <circle id="Elipse_1_copia_6" data-name="Elipse 1 copia 6" class="cls-27" cx="154.046" cy="337.5" r="8"/>
+    <path id="Rectángulo_2_copia_6" data-name="Rectángulo 2 copia 6" class="cls-28" d="M103.046,333.5h49a4,4,0,0,1,4,4v1a2,2,0,0,1-2,2h-53a2,2,0,0,1-2-2v-1A4,4,0,0,1,103.046,333.5Z"/>
+    <circle id="Elipse_1_copia_7" data-name="Elipse 1 copia 7" class="cls-29" cx="154.046" cy="378.5" r="8"/>
+    <path id="Rectángulo_2_copia_7" data-name="Rectángulo 2 copia 7" class="cls-30" d="M103.046,374.5h49a4,4,0,0,1,4,4v1a2,2,0,0,1-2,2h-53a2,2,0,0,1-2-2v-1A4,4,0,0,1,103.046,374.5Z"/>
+  </g>
+</svg>

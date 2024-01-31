@@ -1,0 +1,46 @@
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+main{
+      width: 100vw;
+      height: 100dvh;
+      display: flex;
+}
+.booklet{
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      height: 100dvh;
+}
+.hooks{    
+      background-color: yellow;
+      
+}
+.hooks img{
+      position: relative;
+      top: 17.6vh;
+      height: 64.8vh;
+}
+.right,
+.left{
+      position: relative;
+      height:80vh;
+      width: 40%;
+      background-color: blue;
+}
+.right img,
+.left img{
+      height: 100%;
+}
+.right img{
+      position: relative;
+      background-color: rgba(255, 0, 0, 0.245);
+      left: -18%;
+}
+.cerrado{
+      opacity: 1;
+}

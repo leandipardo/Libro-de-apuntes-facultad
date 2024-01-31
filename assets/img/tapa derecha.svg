@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="480" height="667" viewBox="0 0 480 667">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #000;
+        stroke-width: 1px;
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="240" y1="666.5" x2="240" y2="0.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2a424f"/>
+      <stop offset="1" stop-color="#1f2837"/>
+    </linearGradient>
+  </defs>
+  <rect id="tapa_derecha" data-name="tapa derecha" class="cls-1" x="0.5" y="0.5" width="479" height="666" rx="33" ry="33"/>
+</svg>
