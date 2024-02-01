@@ -1,40 +1,84 @@
 const $sheet= document.getElementById("html-der"),
-materia="COC",
-numeros = ["uno", "dos", "tres", "cuatro", "cinco", "seis", "siete", "ocho", "nueve", "diez","once", "doce", "trece", "catorce", "quince", "dieciséis", "diecisiete", "dieciocho", "diecinueve", "veinte","veintiuno", "veintidós", "veintitrés", "veinticuatro", "veinticinco", "veintiséis", "veintisiete", "veintiocho", "veintinueve", "treinta","treinta_y_uno", "treinta_y_dos", "treinta_y_tres", "treinta_y_cuatro", "treinta_y_cinco", "treinta_y_seis", "treinta_y_siete", "treinta_y_ocho", "treinta_y_nueve", "cuarenta","cuarenta_y_uno", "cuarenta_y_dos", "cuarenta_y_tres", "cuarenta_y_cuatro", "cuarenta_y_cinco", "cuarenta_y_seis", "cuarenta_y_siete", "cuarenta_y_ocho", "cuarenta_y_nueve", "cincuenta","cincuenta_y_uno", "cincuenta_y_dos", "cincuenta_y_tres", "cincuenta_y_cuatro", "cincuenta_y_cinco", "cincuenta_y_seis", "cincuenta_y_siete", "cincuenta_y_ocho", "cincuenta_y_nueve", "sesenta","sesenta_y_uno", "sesenta_y_dos", "sesenta_y_tres", "sesenta_y_cuatro", "sesenta_y_cinco", "sesenta_y_seis", "sesenta_y_siete", "sesenta_y_ocho", "sesenta_y_nueve", "setenta","setenta_y_uno", "setenta_y_dos", "setenta_y_tres", "setenta_y_cuatro", "setenta_y_cinco", "setenta_y_seis", "setenta_y_siete", "setenta_y_ocho", "setenta_y_nueve", "ochenta","ochenta_y_uno", "ochenta_y_dos", "ochenta_y_tres", "ochenta_y_cuatro", "ochenta_y_cinco", "ochenta_y_seis", "ochenta_y_siete", "ochenta_y_ocho", "ochenta_y_nueve", "noventa","noventa_y_uno", "noventa_y_dos", "noventa_y_tres", "noventa_y_cuatro", "noventa_y_cinco", "noventa_y_seis", "noventa_y_siete", "noventa_y_ocho", "noventa_y_nueve", "cien"];    
-let i = -1;
+$markerCoc=document.getElementById("coc"),
+$markerMath=document.getElementById("mat"),
+$markerEpa=document.getElementById("epa"),
+$number=document.getElementById("nhoja");
+let hojas = 2,
+materia="coc",
+i = 0;
 export default function fetchStart(){
             document.addEventListener("click",e=>{
+                  if(e.target.matches("#coc")||e.target.matches("#coc p")){
+                        i = 0;
+                        console.log($number)
+                        materia="coc"
+                        marker($markerCoc);
+                        hojas=5
+                        getData(i,"left")
+                  }
+                  if(e.target.matches("#epa")||e.target.matches("#epa p")){
+                        i = 0;
+                        materia="epa"
+                        marker($markerEpa);
+                        hojas=5
+                        getData(i,"left")
+                  }
+                  if(e.target.matches("#mat")||e.target.matches("#mat p")){
+                        i = 0;
+                        materia="mat"
+                        marker($markerMath);
+                        hojas=5
+                        getData(i,"left")
+                  }
                   if(e.target.matches("#left-arrow")){
-                        if(i< numeros.length - 1)i++;
-                        getData(numeros[i],"left");
+                        if(i < hojas || i === 0)i++;
+                        getData(i,"left");
                   }else if (e.target.matches("#right-arrow")){
                         if(i>0)i--;
-                        getData(numeros[i],"right");
+                        getData(i,"right");
                   }
             })
 }
+function marker(elem){
+      console.log($markerCoc.style + "    " + elem);
+      $markerCoc.style.transform="translateY(0)";
+      $markerEpa.style.transform= "translateY(0)";
+      $markerMath.style.transform= "translateY(0)";
+      elem.style.transform="translateY(-50%)";
+
+}
 async function getData(num,dir){
                   try {
-                      const response = await fetch(`/Hojas/${materia}_${num}.html`);
+                      let response = await fetch(`/Hojas/${materia}_${num}.html`);
                       if(!response.ok)throw new Error(`Error en la solicitud: ${response.status} ${response.statusText}`);
                       const htmlContent = await response.text();
                       await printData(htmlContent,dir)
                  } catch (err) {
-                  console.log(err)
+                  console.log(err);
+                  $sheet.innerHTML=`
+                  <h1 style=";background-color:white;text-align:center;font-size:3em;width:100%;">ALTO BUGENCIO</h1>
+                  <div style="width:100%;height:60%;display:flex;justify-content:center;align-items:center;">
+                        <img style="width:80%;height:60%;" src="/assets/img/error.png" alt="err">
+                  <div>`;
                  }
               }
 async function printData(text,dir){
-                  console.log(text)
                   $sheet.innerHTML =text;
+                  $number.innerHTML= i;
                   timeGo(dir);
               }
 function timeGo(direction){
-
                   setTimeout(() => {
+                        if (i < hojas){
                         (direction === "left") ? $sheet.classList.add("rotate-sheet") :$sheet.classList.add("rotate-sheet-back");
+                        $number.style.opacity="1";
+                  }
                         setTimeout(() => {
                               $sheet.classList.remove("rotate-sheet");
                               $sheet.classList.remove("rotate-sheet-back");   
                         }, 350);
+                        setTimeout(() => {
+                              $number.style.opacity=".5";
+                        }, 1000);
                   }, 5);
             }
