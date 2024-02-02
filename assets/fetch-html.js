@@ -56,7 +56,7 @@ async function getData(num,dir){
                  } catch (err) {
                   console.log(err);
                   $sheet.innerHTML=`
-                  <h1 style=";background-color:white;text-align:center;font-size:3em;width:100%;">ALTO BUGENCIO</h1>
+                  <h1 style=";background-color:white;color:black;text-align:center;font-size:3em;width:100%;">ALTO BUGENCIO</h1>
                   <div style="width:100%;height:60%;display:flex;justify-content:center;align-items:center;">
                         <img style="width:80%;height:60%;" src="/assets/img/error.png" alt="err">
                   <div>`;

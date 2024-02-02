@@ -7,22 +7,66 @@
       font-family: "coolvetica-rg";
       src: url(/assets/coolvetica\ rg.otf);
 }
+:root{
+      --titles-bg:rgba(0, 121, 105, 0.836);
+      --titles-font:white;
+      --bg-arrow:rgba(255, 255, 255, 0.281);
+      --html-bg:white;
+}
 body{
+      font-family: "coolvetica-rg";
       background-image: url(/assets/img/background.jpg);
 }
 main{
       width: 100vw;
       height: 100dvh;
       display: flex;
+      transition: backdrop-filter 15s ease,background-color 5s ease;
 }
+h1{
+      background-color: var(--titles-bg);
+      text-align: center;
+      font-weight: 500;
+      color: var(--titles-font);
+      padding:0 1em;
+      font-size: 2em;
+      margin: 1em 0;
+}
+h2{
+      background-color: var(--titles-bg);
+      color: var(--titles-font);
+      font-weight: 500;
+      padding:0 .5em;
+      width: fit-content;
+      margin: .5em 0;
+}
+h3{
+      font-weight: 600;
+      margin: .5em 0;
+}
+li{
+      margin: .5em 2em;
+}
+.html-style p{
+
+}
+
+
+
+
+
+
+
+
 .booklet{
       position: relative;
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 100vw;
-      height: 100dvh;
-      transition: backdrop-filter 15s ease,background-color 5s ease;
+      width: 60vw;
+      margin-left: 20vw;
+      margin-top: 10dvh;
+      height: fit-content;
 }
 .hooks{    
       position: absolute;
@@ -40,7 +84,6 @@ main{
       position: relative;
       height:80vh;
       width: 45%;
-      /* background-color: rgba(45, 45, 241, 0.24); */
 }
 .right img,
 .left img{
@@ -48,7 +91,7 @@ main{
       box-shadow: 0px 0px 38px 0px rgba(0,0,0,0.61);
       -webkit-box-shadow: 0px 0px 38px 0px rgba(0,0,0,0.61);
       -moz-box-shadow: 0px 0px 38px 0px rgba(0,0,0,0.61);
-      background-color: black;
+      background-color: rgba(0, 0, 0, 0.705);
       height: 100%;
       margin: 0 .5vh;
 }
@@ -61,27 +104,10 @@ main{
       width: 25vw;
       height: 90%;
       margin: 5% 2%;
-      background-color: white;
+      background-color: var(--html-bg);
       padding: 2% 5%;
       overflow: scroll;
       z-index: 2;
-}
-.html-style h1{
-      font-family: "coolvetica-rg";
-      background-color: yellow;
-      padding-left: 1em;
-      font-size: 2em;
-      margin: 1em 0;
-}
-.html-style h2{
-      font-family: "coolvetica-rg";
-      background-color: yellow;
-      padding-left: .5em;
-      width: fit-content;
-      margin: .5em 0;
-}
-.html-style p{
-      font-family: "coolvetica-rg";
 }
 .html-style::-webkit-scrollbar{
       display: none;
@@ -119,19 +145,24 @@ main{
       bottom: 0;
       margin: 5%;
       height: 20%;
-      background-color: transparent;
       cursor: pointer;
       z-index: 7;
-      transition: .25s ease;
+      transition: .25s ease-out;
+      background-color: var(--bg-arrow);
+}
+#left-arrow{
+      left: 30vw;
 }
 #right-arrow{
       transform: rotateZ(180deg);
+      left: -7.5vw;
 }
-#right-arrow:hover,
+#right-arrow:hover{
+      transform: rotateZ(190deg);
+
+}
 #left-arrow:hover{
-      height: 35%;
-      width: 15%;
-      background-color: rgba(255, 255, 255, 0.192);
+      transform: rotateZ(-10deg);
 }
 .mark{
       border-radius: 0 30% 0 0;
@@ -141,7 +172,6 @@ main{
       height: 12.5%;
       left: 1vw;
       padding: 0 .5em;
-      font-family: "coolvetica-rg";
       font-size: 2em;
       transition: .2s ease-in;
       cursor: pointer;
@@ -157,7 +187,6 @@ main{
       background: linear-gradient(180deg, rgba(98,106,187,1) 0%, rgba(113,118,143,1) 100%);
 }
 .number{
-      font-family: "coolvetica-rg";
       font-size: 1em;
       text-align: center;
       display: flex;
