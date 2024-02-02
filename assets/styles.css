@@ -109,7 +109,7 @@ span{
       height: 90%;
       margin: 5% 2%;
       background-color: var(--html-bg);
-      padding: 2% 5%;
+      padding: 5% 7%;
       overflow: scroll;
       z-index: 2;
 }
