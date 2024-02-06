@@ -5,30 +5,36 @@ $markerEpa=document.getElementById("epa"),
 $number=document.getElementById("nhoja");
 let hojas = 2,
 materia="coc",
+numPdf=2,
 i = 0;
 export default function fetchStart(){
             document.addEventListener("click",e=>{
                   if(e.target.matches("#coc")||e.target.matches("#coc p")){
                         i = 0;
-                        console.log($number)
+                        numPdf=2;
                         materia="coc"
                         marker($markerCoc);
                         hojas=5
                         getData(i,"left")
+                        
                   }
                   if(e.target.matches("#epa")||e.target.matches("#epa p")){
+                        numPdf=1;
                         i = 0;
                         materia="epa"
                         marker($markerEpa);
                         hojas=5
                         getData(i,"left")
+                        
                   }
                   if(e.target.matches("#mat")||e.target.matches("#mat p")){
+                        numPdf=2;
                         i = 0;
                         materia="mat"
                         marker($markerMath);
                         hojas=5
                         getData(i,"left")
+                        
                   }
                   if(e.target.matches("#left-arrow")){
                         if(i < hojas || i === 0)i++;
@@ -38,6 +44,7 @@ export default function fetchStart(){
                         getData(i,"right");
                   }
             })
+            btnPDF();
 }
 function marker(elem){
       console.log($markerCoc.style + "    " + elem);
@@ -82,3 +89,14 @@ function timeGo(direction){
                         }, 1000);
                   }, 5);
             }
+function btnPDF(){
+      document.addEventListener("click",e=>{
+            if(e.target.matches("#fotocopias" || e.target.matches("#fotocopias img"))){
+                  abrirPDFs();
+            }
+      })
+}
+export function abrirPDFs() {
+      window.open(`/assets/pdf/guia_${materia}.pdf`, '_blank');
+      if(numPdf === 2) window.open(`/assets/pdf/ejercicios_${materia}.pdf`, '_blank');
+    }

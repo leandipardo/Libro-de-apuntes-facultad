@@ -131,6 +131,7 @@ td{
 .html-style::-webkit-scrollbar{
       display: none;
 }
+
 #html-der{
       transition: 1s ease;
       z-index: 4;
@@ -144,6 +145,7 @@ td{
       animation: girarHoja .35s ease 0s infinite reverse ;
       animation-play-state: running;
 }
+
 @keyframes girarHoja {
       from{
 
@@ -220,4 +222,25 @@ td{
       border-radius: 15px;
       transition: 2s ease;
       opacity:.5;
+}
+.horarios{
+      position: absolute;
+      width: 20vw;
+}
+.horarios img{
+      box-shadow: none;
+      border-radius: 0px;
+      width: 20vw;
+}
+.material{
+      width: 100vw;
+      height: fit-content;
+      margin-top: 30dvh;
+}
+.material img{
+      background-color: transparent;
+      box-shadow: none;
+      transform: rotateZ(-10deg);
+      height: 10vw;
+      cursor: pointer;
 }
