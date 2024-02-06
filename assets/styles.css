@@ -12,6 +12,7 @@
       --titles-font:white;
       --bg-arrow:rgba(255, 255, 255, 0.281);
       --html-bg:white;
+      --bg-table:rgba(128, 128, 128, 0.336);
 }
 body{
       font-family: "coolvetica-rg";
@@ -51,10 +52,24 @@ span{
       margin: 10px;
       background-color: rgba(255, 255, 0, 0.466);
 }
-.html-style p{
-
+table{
+      margin: 1vw;
+      background-color: var(--bg-table);
+      outline: 3px solid black;
 }
-
+tr,
+th,
+td{
+      outline: 1px solid black;
+}
+th{
+      text-transform: uppercase;
+}
+th,
+td{
+      padding: .5em;
+      text-align: center;
+}
 
 
 
@@ -168,6 +183,7 @@ span{
 #left-arrow:hover{
       transform: rotateZ(-10deg);
 }
+
 .mark{
       border-radius: 0 30% 0 0;
       position: absolute;
