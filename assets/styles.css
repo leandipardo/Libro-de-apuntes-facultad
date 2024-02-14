@@ -287,8 +287,10 @@ td{
             margin: 10dvh 0 0 0;
       }
       .arrows-container{
+            position: absolute;
             width: 100vw;
-            bottom: 0;
+            top: 90dvh;
+            z-index: 10;
       }
       .arrows img{
             background-color: rgba(0, 0, 0, 0.397);
