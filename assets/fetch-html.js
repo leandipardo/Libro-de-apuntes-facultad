@@ -64,11 +64,14 @@ async function getData(num,dir){
                       await printData(htmlContent,dir)
                  } catch (err) {
                   console.log(err);
-                  $sheet.innerHTML=`
-                  <h1 style=";background-color:white;color:black;text-align:center;font-size:3em;width:100%;">ALTO BUGENCIO</h1>
-                  <div style="width:100%;height:60%;display:flex;justify-content:center;align-items:center;">
-                        <img style="width:80%;height:60%;" src="/assets/img/error.png" alt="err">
-                  <div>`;
+                  $sheet.innerHTML=`<h1 style=";background-color:white;color:black;text-align:center;font-size:3em;width:100%;">Nada por aquí...</h1>
+                  <div style="width:100%;height:60%;display:flex;justify-content:center;align-items:center;box-shadow:none;">
+                  <img style="box-shadow:none;background-color:white;" src="/assets/img/steven-seagal-what.gif" alt="Seteven seagal perdido">
+                  </div>`;
+                  // <h1 style=";background-color:white;color:black;text-align:center;font-size:3em;width:100%;">ALTO BUGENCIO</h1>
+                  // <div style="width:100%;height:60%;display:flex;justify-content:center;align-items:center;">
+                  //       <img style="width:80%;height:60%;" src="/assets/img/error.png" alt="err">
+                  // <div>
                  }
               }
 async function printData(text,dir){
