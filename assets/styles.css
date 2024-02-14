@@ -162,7 +162,7 @@ td{
       position: absolute;
       width: 80vw;
       height: max-content;
-      z-index: 10000;
+      z-index: 2;
 }
 .arrows{
       display: flex;
