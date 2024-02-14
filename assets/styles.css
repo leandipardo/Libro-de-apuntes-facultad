@@ -248,11 +248,8 @@ td{
 .material{
       position: relative;
       width: fit-content;
-      border-radius: 50%;
       height: fit-content;
-      border: dashed 5px rgb(79, 79, 79);
       margin-top: 30dvh;
-      background-color: rgb(174, 174, 174);
 }
 .material img{
       background-color: transparent;
@@ -260,19 +257,6 @@ td{
       transform: rotateZ(-10deg);
       height: 10vw;
       cursor: pointer;
-}
-.material h3{
-      position: relative;
-      display: block;
-      font-size: 2em;
-      width: 7em;
-      left: 15%;
-      color: rgb(71, 71, 71);
-      cursor: default;
-      transform: rotateZ(-10deg);
-      transform-origin: left;
-      text-align: center;
-
 }
 @media (max-width: 1024px) {
       .booklet{

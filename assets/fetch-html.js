@@ -43,8 +43,10 @@ export default function fetchStart(){
                         if(i>0)i--;
                         getData(i,"right");
                   }
+                  if(e.target.matches("#fotocopias" || e.target.matches("#fotocopias img"))){
+                        abrirPDFs();
+                  }
             })
-            btnPDF();
 }
 function marker(elem){
       console.log($markerCoc.style + "    " + elem);
@@ -89,13 +91,6 @@ function timeGo(direction){
                         }, 1000);
                   }, 5);
             }
-function btnPDF(){
-      document.addEventListener("click",e=>{
-            if(e.target.matches("#fotocopias" || e.target.matches("#fotocopias img"))){
-                  abrirPDFs();
-            }
-      })
-}
 export function abrirPDFs() {
       window.open(`/assets/pdf/guia_${materia}.pdf`, '_blank');
       if(numPdf === 2) window.open(`/assets/pdf/ejercicios_${materia}.pdf`, '_blank');
