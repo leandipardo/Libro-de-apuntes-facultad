@@ -137,6 +137,12 @@ td{
       z-index: 4;
       transform-origin: left;
 }
+#html-der img{
+      box-shadow: none; 
+      width: 100%;
+      height: auto;
+      border-radius: 0;
+}
 .rotate-sheet{
       animation: girarHoja .35s ease 0s infinite none normal;
       animation-play-state: running;
