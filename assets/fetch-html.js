@@ -80,6 +80,7 @@ async function printData(text,dir){
                   timeGo(dir);
               }
 function timeGo(direction){
+      $sheet.scrollTo({ top: 0, behavior: 'smooth' });
                   setTimeout(() => {
                         if (i < hojas){
                         (direction === "left") ? $sheet.classList.add("rotate-sheet") :$sheet.classList.add("rotate-sheet-back");
