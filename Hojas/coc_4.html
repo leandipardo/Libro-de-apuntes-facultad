@@ -1,0 +1,90 @@
+<h1>CONCEPTOS DE SISTEMAS OPERATIVOS</h1>
+<h2>La necesidad del "Software"</h2>
+<p>En síntesis, la distancia entre los usuarios (que tienen los problemas del mundo real) y las computadoras (que los podrían ayudar a resolver) requiere un puente lógico y conceptual que está constituido por el software.</p>
+<br><br>
+<p>La producción de sistemas de software (que constituyen el puente útil entre el usuario y la
+      computadora) es una actividad industrial que requiere métodos, herramientas y
+      procedimientos que se estudian a lo largo de la carrera.
+      </p>
+      <br><br>
+<h3>Un modelo por capas desde la máquina al usuario</h3>
+<ol>
+      <li><b>Computadora (hardware)</b></li>
+      <li><p>Sistema Operativo</p>
+            <ol>
+                  <li>Sistema Operativo residente básico</li>
+                  <li>Funciones de propósito general para utilizar el hardware</li>
+                  <li>Funciiones de administración de recursos</li>
+            </ol>
+      </li>
+      <li>Utilitarios básicos</li>
+      <li>Lenguajes de Programación de Aplicaciones</li>
+      <li>Lenguajes Orientados a la Aplicación</li>
+      <li>Sistemas de Software de propósito general</li>
+      <li>Sistemas de Software dedicados</li>
+      <li><b>Usuario (mundo real)</b></li>
+</ol>
+
+<p>
+      La primera capa (<b>la electriónica de la computadora</b>) depende totalmente del software para ser funcional, sin este no seria mas que un complejo sistema electronico sin ninguna funcion util
+<br><br>
+La segunda capa es el <b>sistema operativo</b>, nos permite comunicarnos con la computadora y utilizar eficientemente sus recursos. para analizarlo lo subdividimos en tres niveles: el s istema operativo residente básico, las funciones portables de control del hardware y las funciones de administración de tareas y recursos.
+<br>
+El primer nivel del sistema operativo <i>(de ahora en adelante S.O)</i> es la BIOS, es el mecanismo utilizado por la pc para darle las primeras instrucciones indispensables para poder comunicarnos con el, por ejemplo habilitar el teclado, verificar la pantalla. Estas funciones vienen incorporadas con el hardware y no se borran al apagar la maquina ya que estan almacenadas en la memoria ROM.
+<br>
+El segundo nivel del S.O se encarga de agregar funciones útiles para el usuario, por ejemplo poder tener un antivirus o que se muestren los archivos y elementos visuales entre otras muchas cosas.
+<br>
+El tercer niuvel del S.O se refiere esencialmente a las funciones de administración de recursos: 
+<br>
+administrar la memoria principal, dispositivos de almacenamiento secundario, diferentes usuarios de la maquina, control ejecución aplicaciones,etc... 
+<br><br>
+La tercera capa (<b>Utilitarios básicos</b>) se refiere a los programas sencillos; visualizacion de imágenes, bloc de notas, reproductor multimedia.
+<br><br>
+En la cuarta capa estan los <b>lenguajes de programación de aplicaciones</b> (Pascal, C, Java, C++). Un lenguaje de programación establece un modo de escribir instrucciones a una computadora en lenguaje "humano", este es traducido a lenguaje de máquina (binario).
+<br><br>
+En la quinta capa tenemos los <b>lenguajes orientados a la aplicación</b>. Estos son mas amigables con el usuario a la hora de escribir y no requieren de un nivel tan tecnico como lo pueden ser Pascal, C , etc... Un ejemplo de esto puede ser el autocad.<br>
+<br><br>
+En la sexta capa tenemos los <b>Sistemas de software de propósito general</b> (tales como sistemas contables, de liquidación de sueldos, etc). <br>
+Desarrollar este tipo de sistemas (independientemente del lenguaje que se utilice) es la actividad más importante de la ingieria de Software.Su destino es lo que se llama el <i>"mercado horizontal"</i>, es decir son de utilidad para una gran cantidad y clase de usuarios. por ejemplo un sistema de sueldos peude ser empleado por empresas de cualquier tipo en diferentes partes del mundo.
+<br><br>
+En la séptima capa tenemos los <b>Sistemas de software dedicados</b>. En este caso se trata de desarrollar un producto <i>"a medida"</i> para una organización, empresa o máquina. Por ejemplo, controladores de un robot o de un lavarropas; sistemas de cálculo financiero, sistemas de diagnostico de enfermedades. En estos casos el valor agregado del producto software es muy alto, y en general la solución es exclusiva o poco portable a otras organizaciones o productos.
+<br><br>
+Y la octava capa <b>el usuario del mundo real</b> sigue siendo un desafío muy complejo para la informática. Muchas veces los rpoblemas planteados no tienen (o no se encuentra) una solución eficiente utilizando computadoras y esto obliga a una permanente investigación y desarrollo de herramientas y productos de software.
+</p>
+<h3>Una definición de sistema operativo</h3>
+<p>
+      En resumen un S.O es basicamente un sistema de control del hardware de una computadora, de administración de sus recursos físicos y de sus usuarios, asi como el control efectivo de la ejecución de los programas que en el se carguen.
+</p>
+<ul>
+      <li>El funcionamiento del S.O implica la existencia de al menos un programa qque está permanentemente ejecutándose junto con nuestras aplicaciones.</li>
+      <li>Esto significa que un subconjunto de los recursos de las computadoras son "tomados" por el S.O que se comunica directa o indirectamente con los programas de aplicación que se ejecutan para cooperar en la ejecución o retomar el control del hardware en caso de problemas.</li>
+</ul>
+<h3>¿qué hace un Sistema Operativo?</h3>
+<ul>
+      <li>Comunicación con los periféricos</li>
+      <li>Control de autorización de usuarios</li>
+      <li>Control de la ejecución de programas</li>
+      <li>Control de concurrencia(gestión de procesos, Comunicación entre estos y sincronización)      </li>
+      <li>Control de errores</li>
+      <li>Administración de memoria</li>
+      <li>Controles de seguridad de datos</li>
+</ul>
+<h4>La interfaz del usuario con el sistema operativo</h4>
+<p>
+      La interfaz es el modo amigable para que el usuario interactue con el S.O, historicamente las interfaces estuivieron basadas en <b>comandos</b> formados por palabras claves predefinidas para ser interpretados por el sistema operativo. <br>
+      estas interfaces se denominan <b>orientadas a caracteres.</b> Por ejemplo: CMD de windows, powershell o el antiguo S.O MSDOS<br>
+      En los últimos años se han impuesto las <b>interfaces gráficas</b> que contienen imagenes representativas (por ejemplo de los archivos o dispositivos o de los comandos), llamadas iconos que se pueden organizar en menúes que se abren y cierran (menúes descendentes) y que pueden expandirse en presentaciones dentro de múltiples <b>ventanas</b> en la pantalla. <br>
+      Las interfaces graficas tipo <b><i>VIMA</b>(o wimp en ingles) significa ventanas, iconos, menúes y apuntadores</i> tienen diferentes ventajas entre las cuales estan:
+</p>
+      <ul>
+            <li>Son intuitivas: siguen unos estandares a los que ya estamos acostumbrados por lo tanto no debemos aprender a usarlas</li>
+            <li>Son consistentes: Toda una gama de aplicaciones (por ejemplo office) tienen la misma forma de interfaz, lo que favorece el aprendizaje y la seguirdad del usauario en su utilización</li>
+            <li>Facilitan el autoaprendizaje al ser repetitivas.</li>
+            <li>Incorporan mecanismos de seguridad (permiten volver atras, no tomar acciones drásticas por error, etc.) </li>
+            <li>Incrementan la flexibilidad. en particular se puede usar simultánea o alternativamente el  teclado o mouse</li>
+      </ul>
+<h3>¿Cuál es el futuro?</h3>
+<ul>
+      <li>La tendencia es a las interfaces naturales: poder hablar directamente con la computadora y tener una respuesta auditiva o grafica</li>
+      <li>inteligencia artificial aplicados al manejo de la vinculación entre el S.O y el usuario, interpretan las elecciones más frecuentes del usuario y los "deseos" segun el tipo de proceso a realizar. por ejemplo el asistente de presentaciones de Power point</li>
+</ul>
