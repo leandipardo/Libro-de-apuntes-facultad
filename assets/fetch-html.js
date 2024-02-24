@@ -23,7 +23,7 @@ export default function fetchStart(){
                         i = 0;
                         materia="epa"
                         marker($markerEpa);
-                        hojas=5
+                        hojas=4
                         getData(i,"left")
                         
                   }
