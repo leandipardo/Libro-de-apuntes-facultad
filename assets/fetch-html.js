@@ -23,7 +23,7 @@ export default function fetchStart(){
                         i = 0;
                         materia="epa"
                         marker($markerEpa);
-                        hojas=4
+                        hojas=5
                         getData(i,"left")
                         
                   }
@@ -53,7 +53,7 @@ function marker(elem){
       $markerCoc.style.transform="translateY(0)";
       $markerEpa.style.transform= "translateY(0)";
       $markerMath.style.transform= "translateY(0)";
-      elem.style.transform="translateY(-50%)";
+      elem.style.transform="translateY(-12.5%)";
 
 }
 async function getData(num,dir){
