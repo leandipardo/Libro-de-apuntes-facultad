@@ -53,7 +53,7 @@ function marker(elem){
       $markerCoc.style.transform="translateY(0)";
       $markerEpa.style.transform= "translateY(0)";
       $markerMath.style.transform= "translateY(0)";
-      elem.style.transform="translateY(-12.5%)";
+      elem.style.transform="translateY(-40%)";
 
 }
 async function getData(num,dir){
