@@ -1,77 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="/assets/styles.css">
-      <title>Informática</title>
-</head>
-<body>
-      <main>
-            <input type="button" value="↩️" id="booklet-rotate">
-            <section class="booklet" id="big-container">
-                  <section class="arrows-container change">
-                        <div class="arrows">
-                              <img id="right-arrow" src="/assets/img/right-arrow.svg" alt="flecha izquierda">
-                              <img id="left-arrow" src="/assets/img/right-arrow.svg" alt="flecha derecha">
-                        </div>
-                  </section>
-                  <div class="left visibilidad change">
-                        <section id="html-izq" class="html-style"></section>
-                        <section class="html-style">
-                              <div class="horarios" >
-                                    <img src="/assets/img/Horarios.png" alt="Horarios materias">
-                              </div>
-                              <div class="material">
-                                          <img id="fotocopias" src="/assets/img/sticker libros.svg" alt="sticker gato durmiendo en libros">
-                              </div>
-                        </section>
-                        <img src="/assets/img/tapa izq.svg" alt="tapa izquierda">
-                  </div>
-                  <div class="hooks">
-                        <img src="/assets/img/Ganchos.svg" alt="Ganchos de carpeta">
-                  </div>
-                  <div class="right change">
-                        <section class="html-style"></section>
-                        <div class="marks-conteiner">
-                                    <div class="mark" id="coc">
-                                          <p>COC</p>
-                                    </div>
-                                    <div class="mark" id="epa">
-                                          <p>EPA</p>
-                                    </div>
-                                    <div class="mark" id="mat">
-                                          <p>MAT</p>
-                                    </div>
-                        </div>
-                        <section id="html-der" class="html-style">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                        </section>
-                        <img src="/assets/img/tapa derecha.svg" alt="Tapa de libro">
-                        <div class="number" id="nhoja"></div>
-                  </div>
-            </section>
-      </main>
-      <script type="module" src="assets/modules.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/styles.css" />
+    <title>Informática</title>
+  </head>
+  <body>
+    <main>
+      <input type="button" value="↩️" id="booklet-rotate" />
+      <section class="booklet" id="big-container">
+        <section class="arrows-container change">
+          <div class="arrows">
+            <img
+              id="right-arrow"
+              src="/assets/img/right-arrow.svg"
+              alt="flecha izquierda"
+            />
+            <img
+              id="left-arrow"
+              src="/assets/img/right-arrow.svg"
+              alt="flecha derecha"
+            />
+          </div>
+        </section>
+        <div class="left visibilidad change">
+          <section id="html-izq" class="html-style"></section>
+          <section class="html-style">
+            <div class="horarios">
+              <p>HORARIOS:</p>
+              <img src="/assets/img/Horarios.png" alt="Horarios materias" />
+            </div>
+            <div class="material">
+              <img
+                id="fotocopias"
+                src="/assets/img/sticker libros.svg"
+                alt="sticker gato durmiendo en libros"
+              />
+            </div>
+            <div class="semestre" id="semestre-conteiner">
+              <div>
+                <button id="semestre-ingreso">ingreso</button>
+              </div>
+              <p>1°semestre</p>
+              <p>2°semestre</p>
+              <p>primer año</p>
+              <div>
+                <button id="semestre-coc-cadp-mat1">COC/CADP/MAT1</button>
+              </div>
+              <div>
+                <button id="semestre-arqu-tdc-mat2">ARQ/TDC/MAT2</button>
+              </div>
+              <p>segundo año</p>
+              <div></div>
+              <div></div>
+              <p>tercer año</p>
+              <div></div>
+              <div></div>
+            </div>
+          </section>
+          <img src="/assets/img/tapa izq.svg" alt="tapa izquierda" />
+        </div>
+        <div class="hooks">
+          <img src="/assets/img/Ganchos.svg" alt="Ganchos de carpeta" />
+        </div>
+        <div class="right change">
+          <section class="html-style"></section>
+          <div class="marks-conteiner">
+            <div class="mark" id="coc" atr="1">
+              <p>COC</p>
+            </div>
+            <div class="mark" id="epa" atr="2">
+              <p>EPA</p>
+            </div>
+            <div class="mark" id="mat" atr="3">
+              <p>MAT</p>
+            </div>
+          </div>
+          <section id="html-der" class="html-style"></section>
+          <img src="/assets/img/tapa derecha.svg" alt="Tapa de libro" />
+          <div class="number" id="nhoja"></div>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="assets/modules.js"></script>
+  </body>
 </html>
