@@ -2,12 +2,6 @@ const $sheet = document.getElementById("html-der"),
   $markerCoc = document.getElementById("coc"),
   $markerMath = document.getElementById("mat"),
   $markerEpa = document.getElementById("epa"),
-  $markerOc = document.getElementById("oc"),
-  $markerMatUno = document.getElementById("matUno"),
-  $markerCadp = document.getElementById("cadp"),
-  $markerArq = document.getElementById("arq"),
-  $markerTdc = document.getElementById("tdc"),
-  $markerMatDos = document.getElementById("matDos"),
   $number = document.getElementById("nhoja");
 let hojas = 0,
   materia = "inicio",
@@ -54,6 +48,7 @@ export default function fetchStart() {
       i = 0;
       numPdf = 2;
       materia = "oc";
+      let $markerOc = document.getElementById("oc");
       marker($markerOc);
       hojas = 5;
       getData(i, "left");
@@ -62,6 +57,7 @@ export default function fetchStart() {
       i = 0;
       numPdf = 2;
       materia = "mat1";
+      let $markerMatUno = document.getElementById("matUno");
       marker($markerMatUno);
       hojas = 5;
       getData(i, "left");
@@ -70,6 +66,7 @@ export default function fetchStart() {
       i = 0;
       numPdf = 2;
       materia = "cadp";
+      let $markerCadp = document.getElementById("cadp");
       marker($markerCadp);
       hojas = 5;
       getData(i, "left");
@@ -78,6 +75,7 @@ export default function fetchStart() {
       i = 0;
       numPdf = 2;
       materia = "arq";
+      let $markerArq = document.getElementById("arq");
       marker($markerArq);
       hojas = 5;
       getData(i, "left");
@@ -86,6 +84,7 @@ export default function fetchStart() {
       i = 0;
       numPdf = 2;
       materia = "tdc";
+      let $markerTdc = document.getElementById("tdc");
       marker($markerTdc);
       hojas = 5;
       getData(i, "left");
@@ -94,6 +93,7 @@ export default function fetchStart() {
       i = 0;
       numPdf = 2;
       materia = "mat2";
+      let $markerMatDos = document.getElementById("matDos");
       marker($markerMatDos);
       hojas = 5;
       getData(i, "left");
