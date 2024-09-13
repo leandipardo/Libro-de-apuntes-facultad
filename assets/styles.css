@@ -184,15 +184,6 @@ td {
   border-radius: 0;
   margin: 0 auto;
 }
-#html-der:hover {
-  transition: all 0.25s cubic-bezier(1, -0.01, 0.89, 1.47);
-  transition-delay: 1s;
-  cursor: -webkit-zoom-in;
-  position: absolute;
-  z-index: 1000;
-  width: 50dvw;
-  transform: translateX(-50%);
-}
 .rotate-sheet {
   animation: girarHoja 0.35s ease 0s infinite none normal;
   animation-play-state: running;
@@ -315,6 +306,17 @@ td {
   transform: rotateZ(-10deg);
   height: 100%;
   cursor: pointer;
+}
+@media only screen and (min-width: 1024px) {
+  #html-der:hover {
+    transition: all 0.25s cubic-bezier(1, -0.01, 0.89, 1.47);
+    transition-delay: 1s;
+    cursor: -webkit-zoom-in;
+    position: absolute;
+    z-index: 1000;
+    width: 50dvw;
+    transform: translateX(-50%);
+  }
 }
 @media screen and (orientation: portrait) {
   #booklet-rotate {
