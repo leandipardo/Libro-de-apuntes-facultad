@@ -9,3 +9,11 @@ document.addEventListener("DOMContentLoaded", (e) => {
   rotarHoja("#booklet-rotate");
   seleccionarSemestre();
 });
+// Selecciona el elemento del cursor
+const cursor = document.getElementById("customCursor");
+
+// Función para mover el cursor con el ratón
+document.addEventListener("mousemove", (e) => {
+  cursor.style.left = e.pageX + "px";
+  cursor.style.top = e.pageY + "px";
+});
