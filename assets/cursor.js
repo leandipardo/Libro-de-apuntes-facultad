@@ -1,5 +1,6 @@
 const cursor = document.getElementById("customCursor"),
-  pointer = document.querySelectorAll("[pointer]");
+  pointer = document.querySelectorAll("[pointer]"),
+  hoja = document.getElementById("html-der");
 
 export default function cursorStyles() {
   // Selecciona el elemento del cursor
@@ -25,5 +26,13 @@ export default function cursorStyles() {
     e.addEventListener("mouseleave", (e) => {
       cursor.classList.remove("pointer-animation");
     });
+  });
+  hoja.addEventListener("mouseenter", (e) => {
+    console.log("2");
+    cursor.classList.add("pointer-hoja");
+  });
+  hoja.addEventListener("mouseleave", (e) => {
+    cursor.classList.remove("pointer-hoja");
+    console.log("3");
   });
 }
