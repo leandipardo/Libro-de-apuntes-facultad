@@ -1,5 +1,4 @@
 * {
-  cursor: none;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -314,6 +313,9 @@ img::selection {
   /* cursor: pointer; */
 }
 @media only screen and (min-width: 1024px) {
+  * {
+    cursor: none;
+  }
   .custom-cursor {
     transition: filter 0.75s ease-out, border-radius 0.75s ease-out,
       scale 0.75s ease;
