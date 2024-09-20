@@ -189,6 +189,21 @@ img::selection {
   border-radius: 0;
   margin: 0 auto;
 }
+.ultima-hoja {
+  all: unset;
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  transform: translateX(-50%);
+  padding: 1%;
+  background-color: rgba(136, 136, 136, 0.315);
+  z-index: 1000;
+  transition: 0.5s ease;
+  transform-origin: center;
+}
+.ultima-hoja:hover {
+  scale: 1.5;
+}
 .rotate-sheet {
   animation: girarHoja 0.35s ease 0s infinite none normal;
   animation-play-state: running;
