@@ -77,7 +77,7 @@ export default function fetchStart() {
       materia = "arq";
       let $markerArq = document.getElementById("arq");
       marker($markerArq);
-      hojas = 15;
+      hojas = 10;
       getData(i, "left");
     }
     if (e.target.matches("#tdc") || e.target.matches("#tdc p")) {
@@ -113,7 +113,6 @@ export default function fetchStart() {
   });
 }
 function marker(elem) {
-  console.log($markerCoc.style + "    " + elem);
   $markerCoc.style.transform = "translateY(0)";
   $markerEpa.style.transform = "translateY(0)";
   $markerMath.style.transform = "translateY(0)";
