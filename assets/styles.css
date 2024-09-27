@@ -189,7 +189,7 @@ img::selection {
   border-radius: 0;
   margin: 0 auto;
 }
-.ultima-hoja {
+#ultima-hoja {
   all: unset;
   position: absolute;
   left: 50%;
@@ -201,7 +201,7 @@ img::selection {
   transition: 0.5s ease;
   transform-origin: center;
 }
-.ultima-hoja:hover {
+#ultima-hoja:hover {
   scale: 1.5;
 }
 .rotate-sheet {
