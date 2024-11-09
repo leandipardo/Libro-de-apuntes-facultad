@@ -7,7 +7,7 @@ import seleccionarSemestre from "./select-semestre.js";
 
 document.addEventListener("DOMContentLoaded", (e) => {
   fetchStart();
-  focus();
+  // focus();
   rotarHoja("#booklet-rotate");
   seleccionarSemestre();
   cursorStyles();
