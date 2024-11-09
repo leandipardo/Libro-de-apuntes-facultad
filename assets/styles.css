@@ -20,7 +20,7 @@ body {
   background-image: url(/assets/img/background.jpg);
   overflow: hidden;
   height: 100dvh;
-  width: 1000dvw;
+  width: 100dvw;
 }
 blockquote {
   background-color: var(--titles-bg);
@@ -33,7 +33,7 @@ main {
   align-items: center;
   display: flex;
   overflow: hidden;
-  transition: backdrop-filter 5s ease, background-color 5s ease;
+  transition: backdrop-filter 15s ease, background-color 5s ease;
 }
 h1 {
   background-color: var(--titles-bg);
@@ -348,8 +348,8 @@ img::selection {
     right: 10%;
     background-color: var(--bg-arrow);
     border-radius: 5px;
-    z-index: 10000;
     font-family: "Courier New", Courier, monospace;
+    z-index: 10000;
     transition: 0.25s ease-in;
   }
   .maximizar > p {
@@ -358,9 +358,11 @@ img::selection {
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
+    opacity: 0.5;
     transition: 0.25s ease-in;
   }
   .maximizar > p:hover {
+    opacity: 1;
     transform: translateX(-50%) translateY(-50%) scale(1.5);
   }
   .custom-cursor {
