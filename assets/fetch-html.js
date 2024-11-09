@@ -19,6 +19,7 @@ export default function fetchStart() {
       materia = "inicio";
       hojas = 0;
       getData(i, "left");
+      marker("none");
     }
     if (e.target.matches("#coc") || e.target.matches("#coc p")) {
       i = 0;
@@ -77,7 +78,7 @@ export default function fetchStart() {
       materia = "arq";
       let $markerArq = document.getElementById("arq");
       marker($markerArq);
-      hojas = 20;
+      hojas = 17;
       getData(i, "left");
     }
     if (e.target.matches("#tdc") || e.target.matches("#tdc p")) {
@@ -98,10 +99,10 @@ export default function fetchStart() {
       hojas = 5;
       getData(i, "left");
     }
-    if (e.target.matches("#left-arrow")) {
+    if (e.target.matches("#left-arrow") && materia != "inicio") {
       if (i < hojas || i === 0) i++;
       getData(i, "left");
-    } else if (e.target.matches("#right-arrow")) {
+    } else if (e.target.matches("#right-arrow") && i != 0) {
       if (i > 0) i--;
       getData(i, "right");
     }
@@ -116,7 +117,18 @@ function marker(elem) {
   $markerCoc.style.transform = "translateY(0)";
   $markerEpa.style.transform = "translateY(0)";
   $markerMath.style.transform = "translateY(0)";
-  elem.style.transform = "translateY(-40%)";
+  if (elem != "none") elem.style.transform = "translateY(-40%)";
+  else {
+    $markerCoc.style.transform = "translateY(-40%)";
+    $markerEpa.style.transform = "translateY(-40%)";
+    $markerMath.style.transform = "translateY(-40%)";
+
+    setTimeout(() => {
+      $markerCoc.style.transform = "translateY(0)";
+      $markerEpa.style.transform = "translateY(0)";
+      $markerMath.style.transform = "translateY(0)";
+    }, 250);
+  }
 }
 async function getData(num, dir) {
   try {
@@ -127,11 +139,12 @@ async function getData(num, dir) {
       );
     const htmlContent = await response.text();
     await printData(htmlContent, dir);
+    if (i == 0 && hojas >= 1) ultimaHoja();
   } catch (err) {
     console.log(err);
-    $sheet.innerHTML = `<h1 style=";background-color:white;color:black;text-align:center;font-size:3em;width:100%;">Nada por aquí...</h1>
+    $sheet.innerHTML = `<h1 style=";background-color:white;color:black;text-align:center;font-size:3em;width:100%;"> nada por acá</h1>
                   <div style="width:100%;height:60%;display:flex;justify-content:center;align-items:center;box-shadow:none;">
-                  <img style="box-shadow:none;background-color:white;" src="/assets/img/steven-seagal-what.gif" alt="Seteven seagal perdido">
+                  <img style="max-width:30vw;" src="/assets/img/steven-seagal-what.gif" alt="Seteven seagal perdido">
                   </div>`;
   }
 }
@@ -162,4 +175,14 @@ export function abrirPDFs() {
   window.open(`/assets/pdf/guia_${materia}.pdf`, "_blank");
   if (numPdf === 2)
     window.open(`/assets/pdf/ejercicios_${materia}.pdf`, "_blank");
+}
+function ultimaHoja() {
+  let $btnUltimaHoja = document.getElementById("ultima-hoja");
+  $btnUltimaHoja.setAttribute("ultima-hoja", hojas);
+  document.addEventListener("click", (e) => {
+    if (e.target.matches("#ultima-hoja")) {
+      getData(hojas, "left");
+      i = hojas - 1;
+    }
+  });
 }

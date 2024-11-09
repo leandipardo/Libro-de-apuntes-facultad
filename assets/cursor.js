@@ -28,11 +28,9 @@ export default function cursorStyles() {
     });
   });
   hoja.addEventListener("mouseenter", (e) => {
-    console.log("2");
     cursor.classList.add("pointer-hoja");
   });
   hoja.addEventListener("mouseleave", (e) => {
     cursor.classList.remove("pointer-hoja");
-    console.log("3");
   });
 }
