@@ -78,7 +78,7 @@ export default function fetchStart() {
       materia = "arq";
       let $markerArq = document.getElementById("arq");
       marker($markerArq);
-      hojas = 18;
+      hojas = 20;
       getData(i, "left");
     }
     if (e.target.matches("#tdc") || e.target.matches("#tdc p")) {
